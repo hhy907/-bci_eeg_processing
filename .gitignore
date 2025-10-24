@@ -1,0 +1,38 @@
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+pip-wheel-metadata/
+build/
+dist/
+*.egg-info/
+*.egg
+.venv\
+venv\
+# VSCode
+.vscode/
+# Environments
+.env
+.env.*
+# Jupyter
+.ipynb_checkpoints/
+# macOS
+.DS_Store
+# logs
+*.log
+# compiled C extensions
+*.so
+# coverage
+.coverage
+coverage.xml
+htmlcov/
+# pyinstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
