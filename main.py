@@ -19,7 +19,7 @@ def _import(path: pathlib.Path, name: str):
 	return mod
 
 
-device_config = _import(ROOT / "01_config" / "device_config.py", "device_config")
+device_config = _import(ROOT / "config" / "device_config.py", "device_config")
 logger_mod = _import(ROOT / "04_utils" / "logger.py", "logger")
 get_logger = getattr(logger_mod, "get_logger")
 log = get_logger("bci.main")

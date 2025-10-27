@@ -10,8 +10,8 @@ import pandas as pd
 from scipy.signal import welch
 
 _ROOT = pathlib.Path(__file__).resolve().parents[1]
-feat_cfg = _ROOT / "01_config" / "feature_config.py"
-dev_cfg = _ROOT / "01_config" / "device_config.py"
+feat_cfg = _ROOT / "config" / "feature_config.py"
+dev_cfg = _ROOT / "config" / "device_config.py"
 
 
 def _import_module(path: pathlib.Path, name: str):
