@@ -1,7 +1,7 @@
 """
 EEG数据采集模块
 - 通过 Emotiv Cortex SDK 订阅 EEG 数据
-- 将样本转发到 LSL（名称见 01_config/lsl_config.py）
+- 将样本转发到 LSL（名称见 config/lsl_config.py）
 - 提供从 LSL 读取数据的辅助方法，便于 main.py 串联
 """
 
@@ -20,8 +20,8 @@ import importlib.util
 import pathlib
 
 _ROOT = pathlib.Path(__file__).resolve().parents[1]
-cfg_path = _ROOT / "01_config" / "device_config.py"
-lsl_path = _ROOT / "01_config" / "lsl_config.py"
+cfg_path = _ROOT / "config" / "device_config.py"
+lsl_path = _ROOT / "config" / "lsl_config.py"
 
 def _import_module(path: pathlib.Path, name: str):
 	spec = importlib.util.spec_from_file_location(name, str(path))

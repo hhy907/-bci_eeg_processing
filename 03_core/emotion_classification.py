@@ -16,7 +16,7 @@ import time
 import csv
 
 _ROOT = pathlib.Path(__file__).resolve().parents[1]
-lsl_cfg = _ROOT / "01_config" / "lsl_config.py"
+lsl_cfg = _ROOT / "config" / "lsl_config.py"
 
 
 def _import_module(path: pathlib.Path, name: str):
